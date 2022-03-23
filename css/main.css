@@ -4,8 +4,8 @@
 }
 
 *:focus{
-  outline: 2px solid #1E90FF;
-  outline-offset: 1px;
+  outline: 2px dashed #1E90FF;
+  outline-offset: 2px;
 }
 
 html{
@@ -17,7 +17,7 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
 }
 
 .wrapper{
@@ -27,6 +27,7 @@ body{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
 }
 
 .container-left{
@@ -93,6 +94,7 @@ body{
   letter-spacing: 2px;
   font-weight: 400;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .container-right {
@@ -100,6 +102,7 @@ body{
   padding: 54px;
   color: #222222;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .sayt-title-right {
@@ -108,6 +111,7 @@ body{
   font-weight: 400;
   Font-size: 24px;
   Line-height: 29px;
+  text-transform: uppercase;
 }
 
 .sayt-hr {
@@ -115,7 +119,6 @@ body{
   margin-bottom: 24px;
   border: 0;
   height: 1px;
-  background-color: #999999;
 }
 
 
@@ -149,6 +152,7 @@ body{
   margin-bottom: 4px;
   color: #222222;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .sayt-card-link:hover{
