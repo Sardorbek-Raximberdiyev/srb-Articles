@@ -187,10 +187,13 @@ body{
   display: flex;
 }
 
+time {
+  margin-right: 10px;
+  white-space: nowrap;
+}
 
 .item-block__data{
   display: flex;
-  margin-right: 25px;
   align-items: center;
   color: #888888;
 }
@@ -245,4 +248,136 @@ body{
 
 .primary-content__button:active{
   background-color: rgba(30, 144, 255, 0.6);
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__block {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .primary-content {
+    padding: 45px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .primary-content__title {
+    font-size: 34px;
+  }
+
+  .item-block__title {
+    margin-top: 0;
+  }
+
+  .item-block__link {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .item-block__forest {
+    min-width: 150px;
+    max-width: 150px;
+    height: 80px;
+    margin-right: 14px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .item-block__link {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .primary-content {
+    padding: 35px;
+  }
+
+  .hero__title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .button__link {
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+  }
+
+  .button__text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero__block {
+    padding: 250px 0;
+  }
+
+  .primary-content {
+    width: 100%;
+  }
+
+  .primary-content__title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .primary-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .primary-content__item {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .item-block__forest {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 6px;
+    object-fit: cover;
+  }
+
+  .hero__button {
+    width: calc(100% - 25px);
+  }
+
+  .button__link {
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+
+  .button__link::before{
+    display: inline-block;
+    align-items: center;
+    margin-bottom: -4px;
+  }
+
+  .primary-content__title {
+    font-size: 28px;
+  }
 }
